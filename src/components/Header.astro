@@ -1,0 +1,40 @@
+---
+import '../styles/components/header.css';
+---
+
+<header class="header-wrapper">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/"><img src="/images/logo.webp" alt="Logo Guillaume Gandolfi - Retour à l'accueil" /></a>
+    </div>
+    <nav role="navigation" aria-label="Navigation principale" class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="burger" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <a href="#quote" class="cta-btn">Demander un devis</a>
+  </div>
+</header>
+
+
+
+<script>
+  // @ts-nocheck
+
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+  
+  burger.addEventListener('click', () => {
+    const isExpanded = burger.getAttribute('aria-expanded') === 'true';
+    burger.setAttribute('aria-expanded', !isExpanded);
+    navLinks.classList.toggle('nav-active');
+  });
+</script>

@@ -1,0 +1,34 @@
+:root {
+  /* Couleurs */
+  --color-background: #ffffff;
+  --color-text: #000000;
+  --color-primary: #3a5f42;
+  --color-secondary: #2c5c6d;
+
+  /* Typographie */
+  --font-size-base: 1rem;
+  --font-family: "Roboto", sans-serif;
+
+  /* Espacements */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --spacing-largest: 4rem;
+
+  /* Tailles des éléments */
+  --header-height: 4rem;
+}
+
+/* ------ Styles de base ------ */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-size: var(--font-size-base);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
