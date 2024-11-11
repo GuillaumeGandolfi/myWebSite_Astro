@@ -1,8 +1,17 @@
 ---
 import BaseLayout from '../layout/BaseLayout.astro';
+import '../styles/home/hero.css';
 ---
 
 <BaseLayout pageTitle="Guillaume Gandolfi - Développeur Web Freelance au Québec">
-  <h1>Bienvenue sur mon site !</h1>
-  <p>Ceci est la page d'accueil.</p>
+	<section class="hero">
+		<div class="hero-content">
+			<h1>Boostez votre visibilité avec un site web professionnel</h1>
+			<p class="hero-tagline">Un design clair, une performance optimale et une stratégie adaptée pour que votre site fasse la différence</p>
+			<div class="hero-buttons">
+				<a href="#about" class="btn">En savoir plus</a>
+				<a href="#services" class="btn">Voir mes services</a>
+			</div>
+		</div>
+	</section>	
 </BaseLayout>

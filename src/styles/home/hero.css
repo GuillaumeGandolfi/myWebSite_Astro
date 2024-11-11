@@ -1,0 +1,84 @@
+/* Section Hero */
+.hero {
+  background-color: var(--color-primary); /* Couleur principale comme fond */
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+}
+
+/* Contenu de la Hero */
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Titre principal */
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Phrase d'accroche */
+.hero-tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Boutons */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Bouton style */
+.hero-buttons .btn {
+  background-color: white;
+  color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border: 2px solid white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+    height: auto; /* Ajuste la hauteur pour qu'elle s'adapte au contenu */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Réduit la taille du titre */
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem; /* Réduit la taille de la phrase d'accroche */
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column; /* Empile les boutons en colonne sur mobile */
+    gap: 0.5rem;
+  }
+
+  .hero-buttons .btn {
+    padding: 0.6rem 1rem; /* Réduit la taille des boutons */
+    font-size: 0.9rem; /* Réduit la taille de la police des boutons */
+  }
+}
